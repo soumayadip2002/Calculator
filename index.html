@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form action="" id="form1" name="form1">
+            <input type="text" id="ans" name="answer"><br><br>
+            <input type="button" id="clear" value="AC" onclick="form1.answer.value=''">
+            <button type="button" id="del" onclick="form1.answer.value=form1.answer.value.substr(0, form1.answer.value.length-1)"><i class="fa-sharp fa-solid fa-delete-left"></i></button>
+            <button type="button" id="mod" onclick="form1.answer.value+='%'"><i class="fa-solid fa-percent"></i></button>
+            <button type="button" id="div" onclick="form1.answer.value+='/'"><i class="fa-solid fa-divide"></i></button><br><br>
+            <input type="button" value="7" onclick="form1.answer.value+='7'">
+            <input type="button" value="8" onclick="form1.answer.value+='8'">
+            <input type="button" value="9" onclick="form1.answer.value+='9'">
+            <button type="button" id="mul" onclick="form1.answer.value+='*'"><i class="fa-solid fa-xmark"></i></button><br><br>
+            <input type="button" value="4" onclick="form1.answer.value+='4'">
+            <input type="button" value="5" onclick="form1.answer.value+='5'">
+            <input type="button" value="6" onclick="form1.answer.value+='6'">
+            <button type="button" id="minus" onclick="form1.answer.value+='-'"><i class="fa-sharp fa-solid fa-minus"></i></button><br><br>
+            <input type="button" value="1" onclick="form1.answer.value+='1'">
+            <input type="button" value="2" onclick="form1.answer.value+='2'">
+            <input type="button" value="3" onclick="form1.answer.value+='3'">
+            <button type="button" id="plus" onclick="form1.answer.value+='+'"><i class="fa-solid fa-plus"></i></button><br><br>
+            <input type="button" value="0" onclick="form1.answer.value+='0'">
+            <input type="button" id="point" value="." onclick="form1.answer.value+='.'">
+            <button type="button" id="equal" onclick="form1.answer.value=eval(form1.answer.value)"><i class="fa-solid fa-equals"></i></button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#a8e6cf, #dcb5ff);
+}
+
+.calculator {
+    background: linear-gradient(pink, #f0d43a);
+    padding: 5rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+
+.calculator::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #346357;
+    filter: blur(50px);
+    z-index: -2;
+}
+
+form {
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 1rem;
+    width: 100%;
+    margin-left: -.75rem;
+    background: #fae3d9;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    text-align: right;
+    cursor: auto;
+}
+
+input[type=button] {
+    padding: 1rem;
+    cursor: pointer;
+    background: #ff847c;
+    padding: 1rem 1.2rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1rem;
+    margin: .2rem;
+    font-weight: bolder;
+}
+
+#point {
+    font-size: 2rem;
+    padding: 0.5rem 1.2rem;
+    padding-bottom: .7rem;
+    padding-top: .1rem;
+}
+
+#clear {
+    background: #66bfbf;
+    padding: 1rem .8rem;
+}
+
+#del {
+    background: red;
+    color: white;
+    padding: 1rem 1rem 1rem .9rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#equal {
+    background: orangered;
+    color: whitesmoke;
+    padding: 1rem 1.1rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#icon {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+}
+
+#minus {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.05rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+    text-align: center;
+}
+
+#plus {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.05rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+    text-align: center;
+}
+
+#mod {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.1rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+    text-align: center;
+}
+
+#div {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.05rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+    text-align: center;
+}
+
+#mul {
+    background: #f23557;
+    color: white;
+    padding: 1rem 1.15rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: .1rem;
+    text-align: center;
+}
+
+@media (max-width:450px) {
+    .calculator {
+        padding: 3rem;
+    }
+}
